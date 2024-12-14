@@ -1,5 +1,6 @@
 import { awaitWithInterval } from "../../../utils/awaitWithInterval";
 import type { Consts } from "../../../utils/consts";
+import { createShowAllButtonsButton } from "./createShowAllButtonsButton";
 import { getRecordButtons } from "./getRecordButtoms";
 import { getTimecard } from "./getTimecard";
 import { parseTodaysTimes } from "./parseTodaysTimes";
@@ -60,5 +61,6 @@ export const handleRecordButtonsVisibility = async (consts: Consts) => {
     recordButtons.buttonStart.style.display = "inline-block";
   }
 
+  createShowAllButtonsButton(recordButtons);
   overwriteStyle();
 };
