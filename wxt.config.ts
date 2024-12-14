@@ -9,5 +9,6 @@ export default defineConfig({
     name: "KING OF TIME Enhanced",
     description,
     version,
+    host_permissions: ["https://*.kingoftime.jp/*"],
   },
 });
