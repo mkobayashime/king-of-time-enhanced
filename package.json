@@ -11,6 +11,7 @@
     "@biomejs/biome": "1.9.4",
     "@types/chrome": "^0.0.280",
     "typescript": "^5.6.3",
+    "valibot": "1.0.0-beta.9",
     "wxt": "^0.19.13"
   }
 }
