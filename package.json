@@ -1,6 +1,6 @@
 {
-  "name": "wxt-starter",
-  "description": "manifest.json description",
+  "name": "king-of-time-enhanced",
+  "description": "KING OF TIMEで今押せる打刻ボタンだけが表示されるようにします",
   "private": true,
   "version": "0.0.0",
   "type": "module",
