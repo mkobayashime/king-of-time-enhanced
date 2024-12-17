@@ -4,7 +4,7 @@
 
 Chrome 拡張: KING OF TIME を使いやすくします
 
-[Chrome Web Store](https://chromewebstore.google.com/detail/dmnmihmggaijobmncbddaopcoddakdeh) (現在審査中)
+[Chrome Web Store](https://chromewebstore.google.com/detail/king-of-time-enhanced/dmnmihmggaijobmncbddaopcoddakdeh)
 
 ![](./src/img/screenshot.png)
 
