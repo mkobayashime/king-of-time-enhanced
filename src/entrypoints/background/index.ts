@@ -21,10 +21,11 @@ export default defineBackground(() => {
           message,
         )
       ) {
-        const formData = new FormData();
-        formData.append("token", message.token);
-        formData.append("user_token", message.userToken);
-        formData.append("version", message.version);
+        const gatewayParams = new URLSearchParams({
+          token: message.token,
+          user_token: message.userToken,
+          version: message.version,
+        });
 
         const gatewayResponse = await (
           await fetch(`${ORIGIN}${message.gatewayBase}`, {
@@ -32,7 +33,7 @@ export default defineBackground(() => {
             headers: {
               Accept: "application/json, text/javascript, */*; q=0.01",
             },
-            body: formData,
+            body: gatewayParams,
           })
         ).json();
 
