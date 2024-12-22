@@ -50,18 +50,20 @@ export default defineBackground(() => {
 
         const adminPageParams = gatewayResponse.params;
 
-        const adminPageResponseHTML = await (
-          await fetch(`${ORIGIN}/admin${adminPageParams}`)
-        ).text();
+        const adminPageResponse = await fetch(
+          `${ORIGIN}/admin${adminPageParams}`,
+        );
+
+        const adminPageURL = new URL(adminPageResponse.url);
 
         const [, redirectedURLPath] =
           /<meta.*http-equiv="refresh".*content=".*URL=(\S+)"/.exec(
-            adminPageResponseHTML,
+            await adminPageResponse.text(),
           ) ?? [];
         if (!redirectedURLPath) return;
 
         const adminRedirectedPageResponseHTML = await (
-          await fetch(`${ORIGIN}${redirectedURLPath}`)
+          await fetch(`${adminPageURL.origin}${redirectedURLPath}`)
         ).text();
 
         sendResponse(adminRedirectedPageResponseHTML);
