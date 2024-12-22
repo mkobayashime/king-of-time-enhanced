@@ -26,7 +26,7 @@ export default defineBackground(() => {
         formData.append("user_token", message.userToken);
         formData.append("version", message.version);
 
-        const gatewayResponse = (await (
+        const gatewayResponse = await (
           await fetch(`${ORIGIN}${message.gatewayBase}`, {
             method: "post",
             headers: {
@@ -34,7 +34,7 @@ export default defineBackground(() => {
             },
             body: formData,
           })
-        ).json()) as unknown;
+        ).json();
 
         if (
           !v.is(
