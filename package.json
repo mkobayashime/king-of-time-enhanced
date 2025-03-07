@@ -9,9 +9,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/chrome": "0.0.306",
+    "@types/chrome": "0.0.308",
     "typescript": "5.8.2",
-    "valibot": "1.0.0-rc.2",
-    "wxt": "0.19.27"
+    "valibot": "1.0.0-rc.3",
+    "wxt": "0.19.29"
   }
 }
