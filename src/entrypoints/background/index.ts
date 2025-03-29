@@ -4,6 +4,7 @@ import { defineBackground } from "#imports";
 const ORIGIN = "https://s2.kingtime.jp";
 
 export default defineBackground(() => {
+	// biome-ignore lint/correctness/noUndeclaredVariables: <explanation>
 	chrome.runtime.onMessage.addListener((...args) => {
 		/**
 		 * @see https://qiita.com/noenture/items/1a963f3dc87bc9bd9b79

@@ -2,6 +2,7 @@ import type { Consts } from "../../../utils/consts";
 
 export const getTimecard = async (consts: Consts) => {
 	try {
+		// biome-ignore lint/correctness/noUndeclaredVariables: <explanation>
 		const adminPageHTML = await chrome.runtime.sendMessage({
 			kind: "fetchAdminPage",
 			gatewayBase: consts.api.gatewayBase,
