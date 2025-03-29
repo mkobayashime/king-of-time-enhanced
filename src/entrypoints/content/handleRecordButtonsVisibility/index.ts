@@ -35,7 +35,7 @@ export const handleRecordButtonsVisibility = async (consts: Consts) => {
 	]);
 	if (!timecardPage || !dateString) return;
 
-	const times = await parseTodaysTimes({ timecardPage, dateString });
+	const times = parseTodaysTimes({ timecardPage, dateString });
 	if (!times) return;
 
 	const recordButtons = await getRecordButtons(consts);

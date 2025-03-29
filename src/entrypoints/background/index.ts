@@ -28,7 +28,7 @@ export default defineBackground(() => {
 					version: message.version,
 				});
 
-				const gatewayResponse = await (
+				const gatewayResponse = (await (
 					await fetch(`${ORIGIN}${message.gatewayBase}`, {
 						method: "post",
 						headers: {
@@ -36,7 +36,7 @@ export default defineBackground(() => {
 						},
 						body: gatewayParams,
 					})
-				).json();
+				).json()) as unknown;
 
 				if (
 					!v.is(
