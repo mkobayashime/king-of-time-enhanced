@@ -12,6 +12,6 @@
     "@types/chrome": "0.0.309",
     "typescript": "5.8.2",
     "valibot": "1.0.0",
-    "wxt": "0.19.29"
+    "wxt": "0.20.0"
   }
 }

@@ -1,4 +1,4 @@
-import { defineContentScript } from "wxt/sandbox";
+import { defineContentScript } from "#imports";
 import { awaitWithInterval } from "../utils/awaitWithInterval";
 import type { Consts } from "../utils/consts";
 

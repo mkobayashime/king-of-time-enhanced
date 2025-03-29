@@ -1,5 +1,5 @@
 import * as v from "valibot";
-import { defineBackground } from "wxt/sandbox";
+import { defineBackground } from "#imports";
 
 const ORIGIN = "https://s2.kingtime.jp";
 

@@ -1,5 +1,5 @@
 import * as v from "valibot";
-import { defineContentScript } from "wxt/sandbox";
+import { defineContentScript } from "#imports";
 import { constsSchema } from "../../utils/consts";
 import { handleRecordButtonsVisibility } from "./handleRecordButtonsVisibility";
 import { redirectTimecardLink } from "./redirectTimecardLink";
