@@ -1,5 +1,6 @@
 wxt = bunx wxt
 biome = bunx biome
+eslint = bunx eslint
 typecheck = bunx tsc --noEmit
 
 deps: PHONY
@@ -7,9 +8,11 @@ deps: PHONY
 
 lint: deps PHONY
 	$(biome) check .
+	$(eslint) .
 
 lint.fix: deps PHONY
 	$(biome) check --fix .
+	$(eslint) --fix .
 
 dev: deps PHONY
 	$(wxt)
