@@ -1,18 +1,18 @@
 {
-  "name": "king-of-time-enhanced",
-  "description": "KING OF TIMEで今押せる打刻ボタンだけが表示されるようにします",
-  "private": true,
-  "version": "1.0.1",
-  "type": "module",
-  "scripts": {
-    "postinstall": "wxt prepare"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@mkobayashime/shared-config": "1.1.0",
-    "@types/chrome": "0.0.313",
-    "typescript": "5.8.2",
-    "valibot": "1.0.0",
-    "wxt": "0.20.0"
-  }
+	"name": "king-of-time-enhanced",
+	"description": "KING OF TIMEで今押せる打刻ボタンだけが表示されるようにします",
+	"private": true,
+	"version": "1.0.1",
+	"type": "module",
+	"scripts": {
+		"postinstall": "wxt prepare"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@mkobayashime/shared-config": "1.1.0",
+		"@types/chrome": "0.0.313",
+		"typescript": "5.8.2",
+		"valibot": "1.0.0",
+		"wxt": "0.20.0"
+	}
 }
