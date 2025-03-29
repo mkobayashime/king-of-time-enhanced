@@ -1,4 +1,4 @@
-export const parseTodaysTimes = async ({
+export const parseTodaysTimes = ({
 	timecardPage,
 	dateString,
 }: { timecardPage: Document; dateString: string }) => {
