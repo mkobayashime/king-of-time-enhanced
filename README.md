@@ -1,4 +1,4 @@
-![](./src/public/icon/128.png)
+![](./public/icon/128.png)
 
 # KING OF TIME Enhanced
 
