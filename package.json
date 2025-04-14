@@ -2,7 +2,7 @@
 	"name": "king-of-time-enhanced",
 	"description": "KING OF TIMEで今押せる打刻ボタンだけが表示されるようにします",
 	"private": true,
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"scripts": {
 		"postinstall": "wxt prepare"
