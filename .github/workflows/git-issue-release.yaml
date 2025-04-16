@@ -2,8 +2,6 @@ name: git-issue-release
 
 on:
   push:
-    branches:
-      - main
   release:
     types: [released]
 
@@ -11,6 +9,7 @@ jobs:
   action:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       issues: write
     steps:
       - name: git-issue-release
