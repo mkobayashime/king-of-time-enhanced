@@ -8,7 +8,7 @@
 		"postinstall": "wxt prepare"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.0.6",
 		"@mkobayashime/shared-config": "1.2.0",
 		"@types/chrome": "0.0.326",
 		"eslint": "9.29.0",
