@@ -5,7 +5,7 @@
       "name": "KING OF TIME Enhanced",
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@mkobayashime/shared-config": "1.2.0",
+        "@mkobayashime/shared-config": "2.0.0",
         "@types/chrome": "0.1.0",
         "eslint": "9.31.0",
         "typescript": "5.8.3",
@@ -134,7 +134,7 @@
 
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
 
-    "@mkobayashime/shared-config": ["@mkobayashime/shared-config@1.2.0", "", { "peerDependencies": { "@biomejs/biome": "^1.9.4", "eslint": "^9.29.0", "typescript": "^5.8.3", "typescript-eslint": "^8.34.1" } }, "sha512-ky00w8xp+S3XcMGBNOytDVTmWhLt5nYmTXsS34QolmD/dPaZ9PHpBQt+i1YLz8GbB5cHD8t//UxQ5zKE45ZK4Q=="],
+    "@mkobayashime/shared-config": ["@mkobayashime/shared-config@2.0.0", "", { "peerDependencies": { "@biomejs/biome": "^2.0.4", "eslint": "^9.29.0", "typescript": "^5.8.3", "typescript-eslint": "^8.34.1" } }, "sha512-Ghc5dERhTrWXiPU0aSIxlxcXppumVZ+bErh5vhdzxxiIO6nEBHBBEtVvlYSs5Ww8xmtMRykbNo+ZanFJejL29g=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
