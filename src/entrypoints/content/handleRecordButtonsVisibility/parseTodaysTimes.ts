@@ -1,7 +1,10 @@
 export const parseTodaysTimes = ({
 	timecardPage,
 	dateString,
-}: { timecardPage: Document; dateString: string }) => {
+}: {
+	timecardPage: Document;
+	dateString: string;
+}) => {
 	const table = Array.from(timecardPage.getElementsByTagName("table")).find(
 		(tableElement) => {
 			const thElements = Array.from(tableElement.querySelectorAll("thead th"));
