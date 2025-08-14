@@ -6,7 +6,6 @@ function awaitWithInterval<T>(
 	} = { interval: 250, timeout: 3000 },
 ) {
 	return new Promise<T | undefined>((resolve) => {
-		// biome-ignore lint/style/useConst: <explanation>
 		let intervalID: number | undefined;
 
 		const intervalFunction = () => {

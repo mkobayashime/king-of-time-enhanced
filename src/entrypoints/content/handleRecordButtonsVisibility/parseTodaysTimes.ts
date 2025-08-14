@@ -8,7 +8,7 @@ export const parseTodaysTimes = ({
 	const table = Array.from(timecardPage.getElementsByTagName("table")).find(
 		(tableElement) => {
 			const thElements = Array.from(tableElement.querySelectorAll("thead th"));
-			if (thElements.length === 0) return;
+			if (thElements.length === 0) return false;
 
 			return ["specific_date", "start_end_timerecord", "rest_timerecord"].every(
 				(c) => thElements.some((element) => element.classList.contains(c)),
@@ -35,6 +35,8 @@ export const parseTodaysTimes = ({
 		const td = todaysRow.querySelector(`[data-ht-sort-index='${s}']`);
 		if (td instanceof HTMLElement)
 			return td.innerText.split("\n").filter((t) => /\d\d:\d\d/.exec(t));
+
+		return undefined;
 	});
 	if (
 		timesStart === undefined ||
