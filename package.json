@@ -11,7 +11,7 @@
 		"@biomejs/biome": "2.2.0",
 		"@mkobayashime/shared-config": "2.0.0",
 		"@types/chrome": "0.1.0",
-		"eslint": "9.32.0",
+		"eslint": "9.35.0",
 		"typescript": "5.9.2",
 		"typescript-eslint": "8.42.0",
 		"valibot": "1.1.0",
