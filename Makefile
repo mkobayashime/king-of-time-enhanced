@@ -4,7 +4,11 @@ eslint = bunx eslint
 typecheck = bunx tsc --noEmit
 
 deps: PHONY
+ifeq ($(CI), true)
+	bun install --frozen-lockfile
+else
 	bun install
+endif
 
 lint: deps PHONY
 	$(biome) check .
