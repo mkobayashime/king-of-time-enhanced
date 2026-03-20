@@ -2,11 +2,12 @@ import { defineContentScript } from "#imports";
 import { awaitWithInterval } from "../utils/awaitWithInterval";
 import type { Consts } from "../utils/consts";
 
-type PartialDeep<T> = T extends Record<string, unknown>
-	? Partial<{
-			[K in keyof T]: PartialDeep<T[K]>;
-		}>
-	: T;
+type PartialDeep<T> =
+	T extends Record<string, unknown>
+		? Partial<{
+				[K in keyof T]: PartialDeep<T[K]>;
+			}>
+		: T;
 
 declare const window: {
 	Recorder?: PartialDeep<{
