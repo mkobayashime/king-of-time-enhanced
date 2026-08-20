@@ -1,4 +1,5 @@
 import * as v from "valibot";
+
 import { defineBackground } from "#imports";
 
 const ORIGIN = "https://s2.kingtime.jp";
@@ -51,9 +52,7 @@ export default defineBackground(() => {
 
 				const adminPageParams = gatewayResponse.params;
 
-				const adminPageResponse = await fetch(
-					`${ORIGIN}/admin${adminPageParams}`,
-				);
+				const adminPageResponse = await fetch(`${ORIGIN}/admin${adminPageParams}`);
 
 				const adminPageURL = new URL(adminPageResponse.url);
 

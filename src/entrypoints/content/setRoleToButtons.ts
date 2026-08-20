@@ -5,9 +5,7 @@ export const setRoleToButtons = async () => {
 	if (menuButton) menuButton.role = "button";
 
 	const buttons = await awaitWithInterval(() => {
-		const buttons = Array.from(
-			document.querySelectorAll("#buttons [id^='record_']"),
-		);
+		const buttons = Array.from(document.querySelectorAll("#buttons [id^='record_']"));
 		if (buttons.length > 0) return { data: buttons };
 	});
 	if (!buttons) return;

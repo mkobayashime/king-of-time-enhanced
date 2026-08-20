@@ -27,8 +27,7 @@ export const handleRecordButtonsVisibility = async (consts: Consts) => {
 			const dateElement = document.querySelector(".watch-year-to-date");
 			if (!(dateElement instanceof HTMLElement)) return;
 
-			const [, dateString] =
-				/\d+年(\d+月\d+日)/.exec(dateElement.innerText) ?? [];
+			const [, dateString] = /\d+年(\d+月\d+日)/.exec(dateElement.innerText) ?? [];
 
 			if (dateString) return { data: dateString };
 		}),
