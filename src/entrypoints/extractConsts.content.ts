@@ -1,4 +1,5 @@
 import { defineContentScript } from "#imports";
+
 import { awaitWithInterval } from "../utils/awaitWithInterval";
 import type { Consts } from "../utils/consts";
 
@@ -38,8 +39,7 @@ export const getConsts = (): Promise<Consts | undefined> =>
 		const version = window.Recorder?.Consts?.VERSION;
 		const token = window.Recorder?.userData?.token?.token_f;
 		const userToken = window.Recorder?.userData?.user?.user_token;
-		const recordButtons =
-			window.Recorder?.userData?.timerecorder?.record_button;
+		const recordButtons = window.Recorder?.userData?.timerecorder?.record_button;
 
 		if (gatewayBase && version && token && userToken && recordButtons) {
 			return {

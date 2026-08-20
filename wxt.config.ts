@@ -1,4 +1,5 @@
 import { defineConfig } from "wxt";
+
 import { description, version } from "./package.json";
 
 export default defineConfig({

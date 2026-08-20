@@ -5,16 +5,14 @@ export const parseTodaysTimes = ({
 	timecardPage: Document;
 	dateString: string;
 }) => {
-	const table = Array.from(timecardPage.getElementsByTagName("table")).find(
-		(tableElement) => {
-			const thElements = Array.from(tableElement.querySelectorAll("thead th"));
-			if (thElements.length === 0) return false;
+	const table = Array.from(timecardPage.getElementsByTagName("table")).find((tableElement) => {
+		const thElements = Array.from(tableElement.querySelectorAll("thead th"));
+		if (thElements.length === 0) return false;
 
-			return ["specific_date", "start_end_timerecord", "rest_timerecord"].every(
-				(c) => thElements.some((element) => element.classList.contains(c)),
-			);
-		},
-	);
+		return ["specific_date", "start_end_timerecord", "rest_timerecord"].every((c) =>
+			thElements.some((element) => element.classList.contains(c)),
+		);
+	});
 	if (!table) return;
 
 	const todaysRow = Array.from(table.querySelectorAll("tr")).find((tr) => {

@@ -18,18 +18,12 @@ export const createShowAllButtonsButton = ({
 	showAllButton.style.borderRadius = "4px";
 
 	showAllButton.addEventListener("click", () => {
-		for (const button of [
-			buttonStart,
-			buttonEnd,
-			buttonStartRest,
-			buttonEndRest,
-		]) {
+		for (const button of [buttonStart, buttonEnd, buttonStartRest, buttonEndRest]) {
 			button.style.display = "inline-block";
 		}
 	});
 
-	const buttonsContainerElement =
-		document.getElementById("buttons")?.parentElement;
+	const buttonsContainerElement = document.getElementById("buttons")?.parentElement;
 	if (!(buttonsContainerElement instanceof HTMLElement)) return;
 
 	buttonsContainerElement.appendChild(showAllButton);
