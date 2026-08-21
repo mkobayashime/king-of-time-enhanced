@@ -8,7 +8,7 @@
 		"postinstall": "wxt prepare"
 	},
 	"devDependencies": {
-		"@types/chrome": "0.2.5",
+		"@types/chrome": "0.2.6",
 		"oxfmt": "0.64.0",
 		"oxlint": "1.79.0",
 		"oxlint-tsgolint": "7.0.2001",
