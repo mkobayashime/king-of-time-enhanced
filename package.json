@@ -1,6 +1,6 @@
 {
 	"name": "king-of-time-enhanced",
-	"version": "1.0.7",
+	"version": "1.1.0",
 	"private": true,
 	"description": "KING OF TIMEで今押せる打刻ボタンだけが表示されるようにします",
 	"type": "module",
