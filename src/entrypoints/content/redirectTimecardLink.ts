@@ -10,6 +10,8 @@ export const redirectTimecardLink = async () => {
 			if (element) return { data: element };
 		});
 
+		await new Promise((res) => globalThis.setTimeout(res, 200));
+
 		if (timeCardListItem instanceof HTMLElement) timeCardListItem.click();
 	}
 };
